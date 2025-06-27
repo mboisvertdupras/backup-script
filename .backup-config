@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Secure backup configuration file
+# This file should have restricted permissions (600) and be owned by the ploi user
+# Set permissions with: chmod 600 .backup-config
+
+# Restic repository password
+export RESTIC_PASSWORD="your_restic_password_here"
+
+# MySQL password
+export MYSQL_PASSWORD="your_mysql_password_here"
+
+# MySQL user (defaults to 'root' if not set)
+export MYSQL_USER="root"
+
+# AWS credentials (if not already set in environment)
+# export AWS_ACCESS_KEY_ID="your_aws_access_key"
+# export AWS_SECRET_ACCESS_KEY="your_aws_secret_key"
+
+# Restic repository URL
+export RESTIC_REPOSITORY="your_restic_repository_url_here"
